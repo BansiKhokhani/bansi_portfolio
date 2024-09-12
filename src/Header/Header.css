@@ -48,7 +48,7 @@
       position: absolute;
       top: 60px;
       right: 0;
-      background-color: #282c34;
+      background-color: #1D2230;
       width: 200px;
       padding: 10px;
     }
@@ -62,7 +62,7 @@
     }
   
     .menu-toggle button {
-      background-color: #282c34;
+      background-color: #1D2230;
       color: white;
       border: none;
       font-size: 24px;
