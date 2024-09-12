@@ -1,0 +1,28 @@
+.Projects{
+    /* text-align: left; */
+    padding-bottom: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+   
+}
+.ProjectText{
+    color: #fff;
+    padding:20px;
+    font-size: 1.8rem;
+}
+.line{
+    background-color:#252b3d;
+    border: none;
+    height:2px;
+}
+.project {
+  text-align: center;
+  padding: 40px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two items per row */
+  gap: 20px; /* Space between items */
+  justify-items: center; /* Center items */
+}

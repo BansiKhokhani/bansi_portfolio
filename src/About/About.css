@@ -1,0 +1,54 @@
+.About{
+   
+    padding-bottom: 150px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+     justify-content: center; 
+    align-items: center; 
+   
+}
+.AboutText{
+    
+    color: #fff;
+    padding:20px;
+    font-size: 1.8rem;
+    
+   
+}
+.line{
+    background-color:#252b3d;
+    border: none;
+    height:2px;
+}
+.detail{
+    color: #fff;
+    padding-left: 20px;
+    text-align: left;
+    padding-left: 50px; 
+    padding-right: 50px;
+    font-size:1rem;
+   
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+.ProjectsButton {
+    margin-top: 50px;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+   
+  }
+  
+  .ProjectsButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .ProjectsButton:focus {
+    outline: none;
+  }
+  

@@ -1,0 +1,72 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Header Styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .logo img {
+    height: 70px;
+  }
+  
+  /* Menu Styles */
+  .menu ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .menu ul li {
+    margin-left: 20px;
+  }
+  
+  .menu ul li a {
+    color: white;
+    text-decoration:none;
+    font-size: 20px;
+    font-weight: bold;
+    ;
+  }
+  
+  /* Menu Toggle Button (for mobile view) */
+  .menu-toggle {
+    display: none;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .menu ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #282c34;
+      width: 200px;
+      padding: 10px;
+    }
+  
+    .menu ul.show {
+      display: flex;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .menu-toggle button {
+      background-color: #282c34;
+      color: white;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  }
+  

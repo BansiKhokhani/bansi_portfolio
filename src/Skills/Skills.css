@@ -1,0 +1,33 @@
+.Skills{
+    /* text-align: left; */
+    padding-bottom: 70px;
+    /* padding-left: 20px; */
+    padding-right: 20px;
+}
+.line{
+    background-color:#252b3d;
+    border: none;
+    height:2px;
+}
+.SkillsText{
+    color: #fff;
+    padding:20px;
+    font-size: 1.8rem;
+    padding-left: 40px;
+}
+.Skills_list ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.Skills_list ul li{
+   text-align: center;
+   color: #ffff;
+    padding-left: 40px; 
+    padding-bottom: 40px;
+}
+.Skills_list ul li img{
+    height: 70px;
+
+}
