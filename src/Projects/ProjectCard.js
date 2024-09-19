@@ -9,6 +9,7 @@ import ReduxLogo from '../assets/Projects/redux.svg'
 import githublogo from '../assets/Projects/github-icon.svg'
 import internetLogo from '../assets/Projects/internet.png'
 import Tooltip from "./Tooltip.js";
+import Realm from '../assets/skills/realm.svg'
 
 
 const ProjectCard = ({ title, description, imageUrl, tech,githubLink,projectsUrl }) => {
@@ -50,6 +51,7 @@ const ProjectCard = ({ title, description, imageUrl, tech,githubLink,projectsUrl
                         {tech.includes('ReactNative') &&  <Tooltip content="React Native"><li><img src={ReactNativeLogo} alt="icon" /></li></Tooltip>}
                         {tech.includes('Javascript') && <Tooltip content="Javascript"> <li><img src={JavascriptLogo} alt="icon" /></li></Tooltip>}
                         {tech.includes('Redux') && <Tooltip content="Redux"> <li><img src={ReduxLogo} alt="icon" /></li></Tooltip>}
+                        {tech.includes('Realm') && <Tooltip content="Realm"> <li><img src={Realm} alt="icon" /></li></Tooltip>}
                 </ul>
             </div>
         </div>

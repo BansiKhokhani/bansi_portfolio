@@ -4,6 +4,7 @@ import ProjectCard from './ProjectCard';
 import ExpenseManagerProject from '../assets/Projects/expense_manager.png'
 import TicTacTeoProject from '../assets/Projects/Tic-Tac-Teo.png'
 import MathRiddleproject from '../assets/Projects/MathRiddle.png'
+import ToDoListProject from '../assets/Projects/ToDoList.png'
 
 const Projects = () => {
     const [isFlipped, setIsFlipped] = useState(false);
@@ -32,7 +33,14 @@ const Projects = () => {
             githubLink:'https://github.com/BansiKhokhani/Tic-toe-game',
             projectsUrl:'https://tictacteowebgame.netlify.app/'
         },
-        // Add more projects as needed
+        {
+            title: 'ToDoList App',
+            description: 'The Todolist app is a simple yet powerful tool designed to help you stay on top of your tasks and boost productivity. Whether you’re managing daily errands, work projects, or long-term goals, this app keeps everything in one place and easily accessible.',
+            imageUrl: ToDoListProject,
+            tech: ['ReactNative','Javascript','Realm'],
+            githubLink:'https://github.com/BansiKhokhani/ToDoList',
+            projectsUrl:''
+        }
     ];
     // Function to handle the card flip
     const handleFlip = () => {
