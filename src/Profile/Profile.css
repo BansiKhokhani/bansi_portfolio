@@ -49,12 +49,11 @@ body {
 /* Links */
 .link {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   gap: 24px;
 }
 
 .link a {
-  color: white;
   font-size: 34px;
   transition: transform 0.2s ease-in-out;
 }
@@ -66,8 +65,7 @@ body {
 /* Responsive Styles */
 @media (max-width: 768px) {
   .profile {
-    flex-direction: column; /* Stack elements vertically */
-    text-align: center;
+    flex-direction: column; 
     margin-top: 100px;
   }
 
@@ -100,6 +98,21 @@ body {
 }
 
 @media (max-width: 480px) {
+  .profile {
+     margin-top: 100px;
+  }
+
+  .profile-image {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .round-image {
+    margin-bottom: 20px;
+    width: 150px;
+    height: 150px;
+  }
+
   .name {
     font-size: 1.8rem;
   }
@@ -107,13 +120,14 @@ body {
   .designation {
     font-size: 1rem;
   }
-
-  .round-image {
-    width: 120px;
-    height: 120px;
+  .link {
+   justify-content: space-around;
+    gap: 10px;                     /* Adjust space between icons */
+    width: 100%;                   /* Take full width */
+   
+             
   }
-
-  .links a {
-    font-size: 24px;
+  .link a {
+    font-size: 25px;
   }
 }

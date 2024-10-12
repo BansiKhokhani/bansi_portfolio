@@ -45,7 +45,7 @@ const Profile = () => {
           <a
             href="mailto:bansikhokhani27@gmail.com"
             aria-label="Gmail"
-            style={{ color: '#ffff' }}
+            style={{ color: '#ffff' ,}}
           >
             <FontAwesomeIcon icon={faEnvelope} />
           </a>

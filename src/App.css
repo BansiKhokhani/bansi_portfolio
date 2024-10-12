@@ -15,22 +15,7 @@
 
 @media (max-width: 480px) {
   .App {
-    padding: 15px;
+    padding: 30px;
   }
 }
 
-/* Section Spacing */
-section {
-  margin-bottom: 50px;
-}
-
-@media (max-width: 768px) {
-  section {
-    margin-bottom: 30px;
-  }
-}
-
-/* Smooth scrolling behavior for anchors */
-html {
-  scroll-behavior: smooth;
-}
