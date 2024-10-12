@@ -28,8 +28,7 @@ const Profile = () => {
             rel="noopener noreferrer"
             aria-label="GitHub"
             style={{
-              color: '#fff', fontSize: '34px'
-              , marginRight: '24px'
+              color: '#fff', 
             }}
           >
             <FontAwesomeIcon icon={faGithub} />
@@ -39,14 +38,14 @@ const Profile = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            style={{ color: '#0077b5', fontSize: '34px', marginRight: '24px' }}
+            style={{ color: '#0077b5',  }}
           >
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
           <a
             href="mailto:bansikhokhani27@gmail.com"
             aria-label="Gmail"
-            style={{ color: '#ffff', fontSize: '34px' }}
+            style={{ color: '#ffff' }}
           >
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
