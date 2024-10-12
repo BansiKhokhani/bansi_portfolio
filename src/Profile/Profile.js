@@ -38,14 +38,14 @@ const Profile = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            style={{ color: '#0077b5',  }}
+            style={{ color: '#0077b5', paddingLeft:'10px' }}
           >
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
           <a
             href="mailto:bansikhokhani27@gmail.com"
             aria-label="Gmail"
-            style={{ color: '#ffff' ,}}
+            style={{ color: '#ffff' ,paddingLeft:'10px'}}
           >
             <FontAwesomeIcon icon={faEnvelope} />
           </a>

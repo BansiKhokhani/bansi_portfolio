@@ -50,7 +50,7 @@ body {
 .link {
   display: flex;
   /* justify-content: center; */
-  gap: 24px;
+  /* gap: 24px; */
 }
 
 .link a {
@@ -88,9 +88,7 @@ body {
     font-size: 1.1rem;
   }
 
-  .link {
-    gap: 5px;
-  }
+ 
 
   .link a {
     font-size: 28px;
@@ -120,13 +118,7 @@ body {
   .designation {
     font-size: 1rem;
   }
-  .link {
-   justify-content: space-around;
-    gap: 10px;                     /* Adjust space between icons */
-    width: 100%;                   /* Take full width */
-   
-             
-  }
+  
   .link a {
     font-size: 25px;
   }

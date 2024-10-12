@@ -85,17 +85,24 @@
 
 @media (max-width: 480px) {
   .flip-card-title {
-    font-size: 20px;
+    font-size: 10px;
   }
 
   .topDetail {
     flex-direction: 'row';
     display: 'flex';
     align-items: 'center';
-    gap: 10px;
+    gap: 5px;
   }
 
   .BottomDetail ul {
     gap: 10px;
+  }
+  .BottomDetail ul li img {
+    height: 25px;
+
+  }
+  .topImg img{
+   
   }
 }

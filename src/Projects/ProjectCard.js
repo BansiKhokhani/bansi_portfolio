@@ -25,8 +25,8 @@ const ProjectCard = ({ title, description, imageUrl, tech, githubLink, projectsU
         <div className='projectWrapper'>
             <div className='topDetail'>
                 <h2 className="flip-card-title">{title}</h2>
-                <a href={githubLink}><img src={githublogo} height={30}></img></a>                         
-                <a href={projectsUrl}><img src={internetLogo} height={30}></img></a>
+                <a href={githubLink} className='topImg'><img src={githublogo} height={30}></img></a>                         
+                <a href={projectsUrl} className='topImg'><img src={internetLogo} height={30}></img></a>
             </div>
 
 
