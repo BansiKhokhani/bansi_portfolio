@@ -1,33 +1,87 @@
-.Skills{
-    /* text-align: left; */
-    padding-bottom: 70px;
-    /* padding-left: 20px; */
-    padding-right: 20px;
-}
-.line{
-    background-color:#252b3d;
+/* Skills Section Styling */
+.Skills {
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .line {
+    background-color: #252b3d;
     border: none;
-    height:2px;
-}
-.SkillsText{
+    height: 2px;
+    margin-bottom: 20px;
+  }
+  
+  .SkillsText {
     color: #fff;
-    padding:20px;
     font-size: 1.8rem;
-    padding-left: 40px;
-}
-.Skills_list ul{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .Skills_list ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
     list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+  
+  .Skills_list ul li {
     display: flex;
-    flex-wrap: wrap;
-    
-}
-.Skills_list ul li{
-   text-align: center;
-   color: #ffff;
-    padding-left: 40px; 
-    padding-bottom: 40px;
-}
-.Skills_list ul li img{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .Skills_list ul li img {
     height: 70px;
-
-}
+    margin-bottom: 10px;
+  }
+  
+  .Skills_list ul li h5 {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .SkillsText {
+      font-size: 1.5rem;
+    }
+  
+    .Skills_list ul {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 15px;
+    }
+  
+    .Skills_list ul li img {
+      height: 60px;
+    }
+  
+    .Skills_list ul li h5 {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .SkillsText {
+      font-size: 1.2rem;
+    }
+  
+    .Skills_list ul {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+  
+    .Skills_list ul li img {
+      height: 50px;
+    }
+  
+    .Skills_list ul li h5 {
+      font-size: 0.8rem;
+    }
+  }
+  

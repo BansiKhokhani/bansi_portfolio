@@ -5,6 +5,12 @@
     padding-right: 20px;
    
 }
+.flip-card-title {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color:black;
+}
 .ProjectText{
     color: #fff;
     padding:20px;
@@ -25,4 +31,30 @@
   grid-template-columns: repeat(2, 1fr); /* Two items per row */
   gap: 20px; /* Space between items */
   justify-items: center; /* Center items */
+}
+
+@media (max-width: 768px) {
+  
+  .project-grid {
+    grid-template-columns: repeat(1, 1fr); /* Two items per row */
+  }
+  .ProjectText{
+    padding-top:0px;
+}
+.project {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+.Projects{
+  padding-bottom: 30px;
+}
+
+}
+
+@media (max-width: 480px) {
+  .project-grid {
+    grid-template-columns: repeat(1, 1fr); /* Two items per row */
+  }
+
 }

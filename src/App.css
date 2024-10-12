@@ -1,12 +1,36 @@
+/* Global App Styling */
 .App {
   text-align: center;
   background-color: #1D2230;
   padding: 30px 40px;
+  font-family: Arial, sans-serif;
 }
 
+/* Make the padding responsive */
+@media (max-width: 768px) {
+  .App {
+    padding: 40px;
+  }
+}
 
+@media (max-width: 480px) {
+  .App {
+    padding: 15px;
+  }
+}
 
+/* Section Spacing */
+section {
+  margin-bottom: 50px;
+}
 
+@media (max-width: 768px) {
+  section {
+    margin-bottom: 30px;
+  }
+}
 
-
-
+/* Smooth scrolling behavior for anchors */
+html {
+  scroll-behavior: smooth;
+}

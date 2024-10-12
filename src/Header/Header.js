@@ -23,9 +23,20 @@ const Header = ({ onAboutClick, onSkillsClick ,onProjectsClick,onContactClick}) 
           <li><a href="#contact" onClick={onContactClick}>Contact</a></li>
         </ul>
       </nav>
-      <div className="menu-toggle">
+      {!menuOpen ? 
+      (<div className="menu-toggle">
         <button onClick={toggleMenu}>☰</button>
       </div>
+      )
+      :
+      (
+      <div className='menu-close'>
+        <button onClick={toggleMenu}>x</button>
+      </div>
+      )
+      }
+      
+      
     </header>
   );
 };

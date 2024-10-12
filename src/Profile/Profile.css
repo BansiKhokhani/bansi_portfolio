@@ -1,34 +1,119 @@
+/* Basic Styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0D1117; /* Dark background */
+  font-family: 'Arial', sans-serif;
+}
 
 .profile {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-    text-align: center; /* Center the text */
-    margin-top: 130px;
-    padding-bottom: 145px;
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 130px;
+  padding: 40px 20px;
+  flex-wrap: wrap; /* Enable wrapping for mobile */
+}
+
+.profile-image {
+  margin-right: 50px;
+}
+
+.round-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover; /* Ensure image covers area without distortion */
+}
+
+.profile-details {
+  max-width: 400px;
+}
+
+/* Name and Designation */
+.name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.designation {
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* Links */
+.link {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.link a {
+  color: white;
+  font-size: 34px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.links a:hover {
+  transform: scale(1.2); /* Scale effect on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .profile {
+    flex-direction: column; /* Stack elements vertically */
+    text-align: center;
+    margin-top: 100px;
   }
-  
-  .name {
-    font-size: 2.5rem;
-    font-weight: bold;
-    /* margin-bottom: 1px; */
-    color: #ffff;
-  }
-  
-  .designation {
-    font-size: 1.3rem;
-    color:#ffff;
+
+  .profile-image {
+    margin-right: 0;
     margin-bottom: 20px;
   }
-  .link{
-    display: 'flex';
-    row-gap: '100px'
-  }
+
   .round-image {
-    margin-right: 50px;
-    width: 180px; /* Adjust size as needed */
-    height: 180px; /* Adjust size as needed */
-    border-radius: 50%;
-    object-fit: cover; /* Ensures the image covers the area without distortion */
+    margin-bottom: 20px;
+    width: 150px;
+    height: 150px;
   }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .designation {
+    font-size: 1.1rem;
+  }
+
+  .link {
+    gap: 5px;
+  }
+
+  .link a {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .name {
+    font-size: 1.8rem;
+  }
+
+  .designation {
+    font-size: 1rem;
+  }
+
+  .round-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .links a {
+    font-size: 24px;
+  }
+}

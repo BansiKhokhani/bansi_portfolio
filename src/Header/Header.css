@@ -39,18 +39,22 @@
   .menu-toggle {
     display: none;
   }
+  .menu-close{
+    display: none;
+  }
   
   /* Responsive Styles */
   @media (max-width: 768px) {
     .menu ul {
       display: none;
+      flex:1;
       flex-direction: column;
       position: absolute;
-      top: 60px;
+      top: 100px;
       right: 0;
       background-color: #1D2230;
-      width: 200px;
-      padding: 10px;
+      width: 100%;
+      
     }
   
     .menu ul.show {
@@ -60,13 +64,19 @@
     .menu-toggle {
       display: block;
     }
-  
-    .menu-toggle button {
+    .menu-close{
+      display: block;
+    }
+    .menu-toggle button, .menu-close button {
       background-color: #1D2230;
       color: white;
       border: none;
-      font-size: 24px;
+      font-size: 35px;
       cursor: pointer;
     }
+    .logo img {
+      height: 60px;
+    }
+   
   }
   

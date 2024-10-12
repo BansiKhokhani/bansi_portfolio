@@ -1,54 +1,99 @@
-.About{
-   
-    padding-bottom: 150px;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-     justify-content: center; 
-    align-items: center; 
-   
+/* Basic Styling */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0D1117; /* Dark background */
+  font-family: Arial, sans-serif;
 }
-.AboutText{
-    
-    color: #fff;
-    padding:20px;
-    font-size: 1.8rem;
-    
-   
+
+/* About Section Styling */
+.About {
+  padding: 40px 50px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  color: white;
+  margin-top: 50px;
 }
-.line{
-    background-color:#252b3d;
-    border: none;
-    height:2px;
+
+.AboutText {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
 }
-.detail{
-    color: #fff;
-    padding-left: 20px;
-    text-align: left;
-    padding-left: 50px; 
-    padding-right: 50px;
-    font-size:1rem;
-   
-    font-family: Arial, sans-serif;
-    font-size: 16px;
+
+.line {
+  width: 80%;
+  height: 2px;
+  background-color: #252b3d;
+  border: none;
+  margin: 20px auto;
 }
+
+.detail {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify;
+  max-width: 800px;
+}
+
+/* Projects Button */
 .ProjectsButton {
-    margin-top: 50px;
-    bottom: 20px;
-    right: 20px;
-    padding: 10px 20px;
+  margin-top: 30px;
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.ProjectsButton:hover {
+  background-color: #0056b3;
+}
+
+.ProjectsButton:focus {
+  outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .About {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .AboutText {
+    font-size: 1.5rem;
+  }
+
+  .detail {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+
+  .ProjectsButton {
     font-size: 16px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-   
+    padding: 10px 20px;
   }
-  
-  .ProjectsButton:hover {
-    background-color: #0056b3;
+}
+
+@media (max-width: 480px) {
+  .AboutText {
+    font-size: 1.2rem;
   }
-  
-  .ProjectsButton:focus {
-    outline: none;
+
+  .detail {
+    font-size: 0.9rem;
   }
-  
+
+  .ProjectsButton {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}

@@ -10,9 +10,10 @@ import githublogo from '../assets/Projects/github-icon.svg'
 import internetLogo from '../assets/Projects/internet.png'
 import Tooltip from "./Tooltip.js";
 import Realm from '../assets/skills/realm.svg'
+import Flippy, { FrontSide, BackSide } from 'react-flippy'
 
 
-const ProjectCard = ({ title, description, imageUrl, tech,githubLink,projectsUrl }) => {
+const ProjectCard = ({ title, description, imageUrl, tech, githubLink, projectsUrl }) => {
     const [isFlipped, setIsFlipped] = useState(false); // State to manage flip
 
     const handleCardClick = () => {
@@ -20,42 +21,65 @@ const ProjectCard = ({ title, description, imageUrl, tech,githubLink,projectsUrl
     };
 
     return (
-        <div className="flip-card-background">
+
+        <div className='projectWrapper'>
             <div className='topDetail'>
                 <h2 className="flip-card-title">{title}</h2>
-                <a href={githubLink}><img src={githublogo} height={30}></img></a>
+                <a href={githubLink}><img src={githublogo} height={30}></img></a>                         
                 <a href={projectsUrl}><img src={internetLogo} height={30}></img></a>
-
             </div>
 
-            <div className={`flip-card ${isFlipped ? 'flipped' : ''}`} onClick={handleCardClick}>
-                <div className="flip-card-inner">
-                    {/* Front Side */}
-                    <div className="flip-card-front">
-                        <img src={imageUrl} alt={title} className="project-image" width={400} height={220} />
-                    </div>
 
-                    {/* Back Side */}
-                    <div className="flip-card-back">
-                        <p>{description}</p>
-                    </div>
-                </div>
-            </div>
-            <div className='BottomDetail'>
+            <Flippy
+                //   flipOnHover={true} // You can flip on hover
+                flipOnClick={true} // Or flip on click
+                flipDirection="horizontal" // Flip direction can be horizontal or vertical
+                style={{ margin: '3%' }} // Customize the card size
+            >
+                {/* Front side with an image */}
+                <FrontSide
+                    style={{
+                        //  backgroundColor: '#41669d',
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        padding: '0', margin: '0'
+                    }}
+                >
+                    <img
+                        src={imageUrl}
+                        alt="Front Side"
+                        style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '10px' }}
+                    />
+                </FrontSide>
 
-                <ul>
-                    
-                        {tech.includes('Typescript') && <Tooltip content="Typescript"><li><img src={TypescriptLogo} alt="icon" /></li> </Tooltip>}
-                        {tech.includes('HTML') &&  <Tooltip content="HTML"> <li><img src={HTMLLogo} alt="icon" /></li> </Tooltip>}
-                        {tech.includes('CSS') && <Tooltip content="CSS"> <li><img src={CSSLOGO} alt="icon" /></li></Tooltip>}
-                        {tech.includes('ReactNative') &&  <Tooltip content="React Native"><li><img src={ReactNativeLogo} alt="icon" /></li></Tooltip>}
-                        {tech.includes('Javascript') && <Tooltip content="Javascript"> <li><img src={JavascriptLogo} alt="icon" /></li></Tooltip>}
-                        {tech.includes('Redux') && <Tooltip content="Redux"> <li><img src={ReduxLogo} alt="icon" /></li></Tooltip>}
-                        {tech.includes('Realm') && <Tooltip content="Realm"> <li><img src={Realm} alt="icon" /></li></Tooltip>}
-                </ul>
+                {/* Back side with another image */}
+                <BackSide
+                    style={{
+                        backgroundColor: '#CF9FFF',
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        borderRadius: '10px'
+                    }}
+                >
+                    <h4 className='descriptionText'>{description}</h4>
+                </BackSide>
+
+            </Flippy>
+            <div  className='BottomDetail'>
+            <ul>
+
+              {tech.includes('Typescript') && <Tooltip content="Typescript"><li><img src={TypescriptLogo} alt="icon" /></li> </Tooltip>}
+               {tech.includes('HTML') &&  <Tooltip content="HTML"> <li><img src={HTMLLogo} alt="icon" /></li> </Tooltip>}
+                 {tech.includes('CSS') && <Tooltip content="CSS"> <li><img src={CSSLOGO} alt="icon" /></li></Tooltip>}
+                {tech.includes('ReactNative') &&  <Tooltip content="React Native"><li><img src={ReactNativeLogo} alt="icon" /></li></Tooltip>}
+                {tech.includes('Javascript') && <Tooltip content="Javascript"> <li><img src={JavascriptLogo} alt="icon" /></li></Tooltip>}
+               {tech.includes('Redux') && <Tooltip content="Redux"> <li><img src={ReduxLogo} alt="icon" /></li></Tooltip>}
+                {tech.includes('Realm') && <Tooltip content="Realm"> <li><img src={Realm} alt="icon" /></li></Tooltip>}
+            </ul>
             </div>
         </div>
-
     );
 };
 
