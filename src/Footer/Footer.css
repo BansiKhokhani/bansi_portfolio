@@ -1,6 +1,7 @@
 /* Footer Styling */
 .Footer {
     text-align: center;
+    justify-content: center;
     color: #fff;
     padding: 40px 20px;
     background-color: #1D2230;
@@ -28,7 +29,7 @@
 .link {
     display: flex;
     justify-content: center;
-    gap: 24px;
+    gap: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -43,32 +44,40 @@
     color: #0077b5; /* Change the hover color */
 }
 
-/* Responsive Design */
+
+
 @media (max-width: 768px) {
     .Footertext {
         font-size: 1.5rem;
     }
 
-    .copyRightText {
-        font-size: 0.8rem;
+    .link {
+        flex-direction: row;
+        gap: 15px;
     }
 
+    .copyRightText {
+        font-size: 0.7rem;
+    }
     .social-icon {
-        font-size: 28px;
+        font-size: 24px;
     }
 }
 
 @media (max-width: 480px) {
     .Footertext {
-        font-size: 1.3rem;
+        font-size: 1.2rem;;
     }
 
     .link {
         flex-direction: row;
-        gap: 1px;
+        gap: 10px;
     }
 
     .copyRightText {
         font-size: 0.7rem;
+    }
+    .social-icon {
+        font-size: 20px;
     }
 }

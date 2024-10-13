@@ -30,3 +30,25 @@
     font-size: 20px;
     margin-right: 8px;
   }
+
+@media (max-width: 768px) {
+    .ContactText{
+        font-size: 1.5rem;
+    }
+    .Contact{
+ 
+        padding-bottom: 30px;
+       
+    }
+}
+
+@media (max-width: 480px) {
+    .ContactText{
+        font-size: 1.2rem;
+    }
+    .Contact{
+ 
+        padding-bottom: 5px;
+       
+    }
+}

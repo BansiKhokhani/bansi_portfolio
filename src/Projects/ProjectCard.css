@@ -81,6 +81,9 @@
     height: 30px;
 
   }
+  .topImg img{
+    height: 25px;
+   }
 }
 
 @media (max-width: 480px) {
@@ -102,7 +105,10 @@
     height: 25px;
 
   }
+  .descriptionText{
+    font-size: 10px;
+  }
   .topImg img{
-   
+   height: 10px;
   }
 }

@@ -16,8 +16,7 @@ const Contact = () => {
                     rel="noopener noreferrer"
                     aria-label="GitHub"
                     style={{
-                        color: '#fff', fontSize: '34px'
-                        , marginRight: '24px'
+                        color: '#fff',
                     }}
                 >
                     <FontAwesomeIcon icon={faGithub} />
@@ -27,7 +26,7 @@ const Contact = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="LinkedIn"
-                    style={{ color: '#0077b5', fontSize: '34px', marginRight: '24px' }}
+                    style={{ color: '#0077b5', }}
                 >
                     <FontAwesomeIcon icon={faLinkedin} />
                 </a>
